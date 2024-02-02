@@ -1,4 +1,4 @@
-const verdeCibreste = {
+const verdeCipreste = {
     nome: 'Verde-cipreste',
     pasta: 'imagens-verde-cipreste'
 }
@@ -24,4 +24,11 @@ const rosaClaro  = {
     pasta: 'imagens-rosa-claro'
 }
 
-const minhaLista = []
+const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro]
+
+let imagemSelecionada = 1
+
+function trocarImagem() {
+    const opscaoSelecionada = document.querySelector('[nome=]')
+
+}
