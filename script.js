@@ -1,3 +1,5 @@
+const imagemVisualizacao = document.getElementById('imagem-visualizacao')
+
 const verdeCipreste = {
     nome: 'Verde-cipreste',
     pasta: 'imagens-verde-cipreste'
@@ -19,16 +21,17 @@ const estelar = {
     pasta: 'imagens-estelar'
 }
 
-const rosaClaro  = {
+const rosaClaro = {
     nome: 'Rosa-claro',
     pasta: 'imagens-rosa-claro'
 }
 
 const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro]
 
-let imagemSelecionada = 1
-
+let imagemSelecionada = 2
 function trocarImagem() {
-    const opscaoSelecionada = document.querySelector('[nome=]')
-
+    const idOpscaoSelecionada = document.querySelector('[name="opcao-imagem"]:checked').id
+    imagemSelecionada = idOpscaoSelecionada.charAt(0)
+    imagemVisualizacao.src   = `./imagens/opcoes-cores/imagens-azul-inverno/imagem-${imagemSelecionada}.jpeg`
 }
+
